@@ -21,6 +21,7 @@ This repository contains skeleton code for Azure PowerShell Functions in the V2 
     git clone https://github.com/michaelpeng36/ps-functions-v2-programming-model-bundles.git
     cd ps-functions-v2-programming-model-bundles
     ```
+<!-- TODO: add the verification script and the corresponding command to run the verification script -->
 4. Run the verification script: if it runs without issue, you should be all set to start local development. Otherwise, it should indicate what component of your setup is incorrect.
 5. If you are using storage emulation, run the below command ***in a separate PowerShell window*** to start storage emulation:
     ```
