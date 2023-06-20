@@ -3,4 +3,4 @@
 
 # Update the VARIANT arg in devcontainer.json to pick a supported PowerShell version: 7, 6
 ARG VARIANT=7.2
-FROM mcr.microsoft.com/azure-functions/powershell:4-powershell${VARIANT}
+FROM mcr.microsoft.com/azure-functions/powershell:4-powershell${VARIANT}-core-tools
