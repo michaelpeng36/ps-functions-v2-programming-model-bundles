@@ -29,7 +29,7 @@ ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false \
     PSModuleAnalysisCachePath=/var/cache/microsoft/powershell/PSModuleAnalysisCache/ModuleAnalysisCache
 
 ENV FUNCTIONS_WORKER_RUNTIME=powershell
-ENV FUNCTIONS_WORKER_RUNTIME_VERSION=7.2
+ENV FUNCTIONS_WORKER_RUNTIME_VERSION=7.4
 
 # Configure apt and install packages
 RUN apt-get update \
@@ -115,3 +115,10 @@ RUN apt-get update \
         && tar -C "$DOTNET_ROOT" -xzf "$DOTNET_FILE" \
         && rm "$DOTNET_FILE" \
         && echo "unpacked to ${DOTNET_ROOT}"
+
+    # unzip and install Azure Functions core tools
+    RUN apt-get update && apt-get install -y unzip \
+        && curl -SL --output azure-functions-core-tools.zip https://paulyukstoragev2.blob.core.windows.net/func-core-tools/Azure.Functions.Cli.linux-x64.4.0.5210.zip \
+        && unzip -o azure-functions-core-tools.zip -d /usr/local/bin \
+        && rm azure-functions-core-tools.zip \
+        && chmod +x /usr/local/bin/func
