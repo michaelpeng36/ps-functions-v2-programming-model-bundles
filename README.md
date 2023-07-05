@@ -11,7 +11,7 @@ This repository contains skeleton code for Azure Functions using the V2 programm
 * Private build of Azure Functions Core Tools (Instructions below)
 * [PowerShell 7.2](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi)
 * [.Net Core 6 version SDK 6.0.408 or higher](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) 
-* [.Net Core 8 version SDK 8.0.100-preview.3 or SDK 8.0.100-preview.4](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) **Please note that though this version is currently in preview, it is required for using the v2 PowerShell programming model.**
+* [.Net Core 8 version SDK 8.0.100-preview.3 or SDK 8.0.100-preview.4](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) **Please note that SDK 8.0.100-preview.5 has a compatibility issue and will lead to an error with testing the v2 programming model.**
 * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
 * The [PowerShell extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell).
 * The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code.
@@ -93,7 +93,7 @@ Sample local.json.settings:
 ## Known issues
 
 Known Issues: 
-* The PowerShell language worker 7.4 fails to start when using .Net Core 8 version SDK 8.0.100-preview.5 due to this [breaking change](https://github.com/dotnet/runtime/issues/86713). The PowerShell team is working on a fix for this issue 
+* The PowerShell language worker 7.4 fails to start when using .Net Core 8 version SDK 8.0.100-preview.5 due to this [breaking change](https://github.com/dotnet/runtime/issues/86713). The PowerShell team is working on a fix for this issue. **Please use the .Net Core 8 version SDK 8.0.100-preview.4.**
 * Core Tools [hangs if an error is encountered](https://github.com/Azure/azure-functions-powershell-worker/issues/964) when indexing PowerShell functions.
 
 File new issues in the [Azure Functions PowerShell Worker repository](https://github.com/Azure/azure-functions-powershell-worker/issues).  Please add [Insider Preview] to the title of the issue 
