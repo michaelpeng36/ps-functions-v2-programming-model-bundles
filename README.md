@@ -1,6 +1,6 @@
 # Azure Functions PowerShell Insider Preview of the v2 Programming Model
 
-This repository contains skeleton code for Azure Functions using the V2 programming model for PowerShell.
+This repository contains skeleton code for Azure Functions using the v2 programming model for PowerShell.
 
 ---
 # Getting started
@@ -42,7 +42,7 @@ This repository contains skeleton code for Azure Functions using the V2 programm
     func start
     ```
     There should be one HTTP function pre-written for you called `HttpTrigger1`.
-5. Continue writing your other functions in the V2 programming model!
+5. Continue writing your other functions in the v2 programming model!
 
 ## Configure local settings
 
