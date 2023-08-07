@@ -7,10 +7,23 @@ This repository contains skeleton code for Azure PowerShell Functions in the V2 
 ## Installation Instructions
 
 1. Install the Azure Functions Core Tools private build for your corresponding OS and architecture:
-    - [Windows x64](https://artprodwus21.artifacts.visualstudio.com/Ad1c51fbc-4477-4a0f-b99f-fc9013009a58/e6a70c92-4128-439f-8012-382fe78d6396/_apis/artifact/cGlwZWxpbmVhcnRpZmFjdDovL2F6ZnVuYy9wcm9qZWN0SWQvZTZhNzBjOTItNDEyOC00MzlmLTgwMTItMzgyZmU3OGQ2Mzk2L2J1aWxkSWQvMTM0MjI2L2FydGlmYWN0TmFtZS9kcm9w0/content?format=file&subPath=%2Ffunc-cli-4.0.5210-x64.msi)
-    - [Windows x86](https://artprodwus21.artifacts.visualstudio.com/Ad1c51fbc-4477-4a0f-b99f-fc9013009a58/e6a70c92-4128-439f-8012-382fe78d6396/_apis/artifact/cGlwZWxpbmVhcnRpZmFjdDovL2F6ZnVuYy9wcm9qZWN0SWQvZTZhNzBjOTItNDEyOC00MzlmLTgwMTItMzgyZmU3OGQ2Mzk2L2J1aWxkSWQvMTM0MjI2L2FydGlmYWN0TmFtZS9kcm9w0/content?format=file&subPath=%2Ffunc-cli-4.0.5210-x86.msi)
-    - [macOS ARM64](https://artprodwus21.artifacts.visualstudio.com/Ad1c51fbc-4477-4a0f-b99f-fc9013009a58/e6a70c92-4128-439f-8012-382fe78d6396/_apis/artifact/cGlwZWxpbmVhcnRpZmFjdDovL2F6ZnVuYy9wcm9qZWN0SWQvZTZhNzBjOTItNDEyOC00MzlmLTgwMTItMzgyZmU3OGQ2Mzk2L2J1aWxkSWQvMTM0MjI2L2FydGlmYWN0TmFtZS9kcm9w0/content?format=file&subPath=%2FAzure.Functions.Cli.osx-arm64.4.0.5210.zip)
-    - [macOS x64](https://artprodwus21.artifacts.visualstudio.com/Ad1c51fbc-4477-4a0f-b99f-fc9013009a58/e6a70c92-4128-439f-8012-382fe78d6396/_apis/artifact/cGlwZWxpbmVhcnRpZmFjdDovL2F6ZnVuYy9wcm9qZWN0SWQvZTZhNzBjOTItNDEyOC00MzlmLTgwMTItMzgyZmU3OGQ2Mzk2L2J1aWxkSWQvMTM0MjI2L2FydGlmYWN0TmFtZS9kcm9w0/content?format=file&subPath=%2FAzure.Functions.Cli.osx-x64.4.0.5210.zip)
+    ##  Core Tools Builds
+**Build version**|**OS**|**Architecture**|**Download Link**
+|:-----|:-----|:-----|:-----|
+Core Tools V4 | Windows | x64 | https://functionsintegclibuilds.blob.core.windows.net/ps-npm-insider-preview/Azure.Functions.Cli.win-x64.4.0.5228.zip
+Core Tools V4 | Linux | x64 | https://functionsintegclibuilds.blob.core.windows.net/ps-npm-insider-preview/Azure.Functions.Cli.linux-x64.4.0.5228.zip
+Core Tools V4 | OSX | ARM64 | https://functionsintegclibuilds.blob.core.windows.net/ps-npm-insider-preview/Azure.Functions.Cli.osx-arm64.4.0.5228.zip
+Core Tools V4 | OSX | x64 | https://functionsintegclibuilds.blob.core.windows.net/ps-npm-insider-preview/Azure.Functions.Cli.osx-x64.4.0.5228.zip
+Core Tools V4 | Windows | ARM64 | https://functionsintegclibuilds.blob.core.windows.net/ps-npm-insider-preview/Azure.Functions.Cli.win-arm64.4.0.5228.zip
+Core Tools V4 | Windows | x86 | https://functionsintegclibuilds.blob.core.windows.net/ps-npm-insider-preview/Azure.Functions.Cli.win-x86.4.0.5228.zip
+
+## Core Tools MSI Installer
+
+**Build version**|**OS**|**Architecture**|**Download Link**
+|:-----|:-----|:-----|:-----|
+Core Tools V4 | Windows | x64 | https://functionsintegclibuilds.blob.core.windows.net/ps-npm-insider-preview/func-cli-4.0.5228-x64.msi
+Core Tools V4 | Windows | x86 | https://functionsintegclibuilds.blob.core.windows.net/ps-npm-insider-preview/func-cli-4.0.5228-x86.msi
+
 2. ***(Optional)*** Install [Azurite](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=npm) for storage emulation:
     - Example:
         ```
